@@ -18,20 +18,21 @@ A few flavours I see most often:
 
 **What to do instead.** Ask it to tell you when it's not sure. *"For each claim, mark it confident or unsure, and tell me what I'd need to check."* It's surprisingly good at this when you ask. The reason it doesn't volunteer it is that you never asked.
 
-## 2. It cannot reliably do maths
+## 2. Be careful about maths
 
-This one matters most for John Cusack and Ceebs, so I'm being blunt about it: **the model does not do maths the way you think it does.**
+This one matters most for John Cusack and Ceebs.
 
-It is not a calculator. When you ask it to compute, it's predicting what the next number probably looks like based on patterns in its training data. For simple arithmetic on small numbers it usually gets it right because that pattern is overwhelmingly consistent. For anything with multiple steps, large numbers, or numbers that don't pattern-match cleanly — it will produce a confident, well-formatted, *wrong* answer.
+The model on its own is not a calculator. If you ask it to compute in its head, it's predicting what the next number probably looks like based on patterns in its training data. For simple arithmetic on small numbers it usually gets there because the pattern is overwhelmingly consistent. For multiple steps, large numbers, or anything that doesn't pattern-match cleanly, it will produce a confident, well-formatted, *wrong* answer. A few years ago I watched it compute a compound interest figure to four decimal places, with the formula written out beautifully above it, and the final number was 8% off the right answer. The formula was right. The substitution was right. The arithmetic was wrong. You wouldn't catch it without redoing the sum.
 
-I once watched it compute a compound interest figure to four decimal places, with the formula written out beautifully above it, and the final number was 8% off the real answer. The formula was right. The substitution was right. The arithmetic was wrong. You wouldn't catch it without re-doing the sum yourself.
+That was 2024. The picture in 2026 is different but only partly. All four of the main chat tools now route many numeric requests through an actual calculator or a code interpreter — meaning the model writes a small program and a real machine runs it. When that happens, the arithmetic is fine. The catch is that they don't always do it, and they don't always tell you whether they did.
 
-**How to spot it.** If the answer is a number that matters, redo it. Spreadsheet, calculator, back of an envelope — anything that isn't the model. If you're using it for actuarial sensitivity analysis or pensions calculations, *the model is not where the maths happens*. The model is where the *structure* of the maths gets discussed.
+**Three things to check** when a number matters:
 
-**What to do instead.** Two options.
+- **Does my tool actually have a calculator or code mode, and is it on for this conversation?** ChatGPT, Claude, Gemini and Copilot all do, in their paid tiers. Some require you to turn it on or pick a "with code execution" / "thinking" mode.
+- **Did it use it for this specific answer?** Look for evidence in the reply — a code block, a "ran calculation" note, a citation of the result. If there's no sign of computation and the number is precise, assume it eyeballed it.
+- **Is the formula it ran the right formula?** Computation is now usually fine. Choice of formula and choice of inputs are still your problem. A correct execution of the wrong sum is still wrong.
 
-- Ask it to write out the calculation *as a formula or as code* and execute that yourself. The formula is usually fine. The execution is the unreliable bit.
-- Use a tool that has a calculator built in. Some chat tools can now actually run a small calculator or code interpreter to check arithmetic. The good ones flag clearly when they've done the maths properly versus when they've estimated. Use that mode for anything that matters.
+**The bottom line, unchanged.** If the answer is a number that matters, redo it. Spreadsheet, calculator, back of an envelope — anything that isn't the model. For actuarial sensitivity analysis or pensions calculations, the model is where the *structure* of the maths gets discussed and stress-tested. Whether or not it does the arithmetic, you own the result.
 
 ## 3. It does not know what happened recently
 
@@ -78,6 +79,16 @@ This isn't a paranoid concern. It's a real one for three professions that all ha
 - **Sebastian Chabal** — your employer's IP, customer-site information, anything covered by your employment contract.
 
 **The rule.** If you'd be uncomfortable seeing it appear in a future model's output, don't paste it in. Use the version your employer has approved. If they haven't approved one, use synthetic or anonymised examples. The patterns still work — just swap *"this client"* for *"a 55-year-old policyholder with the following profile"*.
+
+## 7. What not to use it for in your job
+
+The six sections above are about *how* it fails. This one is about *where* it shouldn't be in the loop at all, regardless of how well you prompt it. One paragraph each — your own list will be longer than mine.
+
+- **Sebastian** — anything that touches certification, sign-off, or regulator-facing conformity. Draft a non-conformance write-up, summarise a standard, extract a clause: fine. Decide whether a lift is compliant, sign a CE/UKCA declaration, judge whether a deviation is safe: not fine. The model has no professional liability, no notified body status, and no skin in the game when something falls. Your name on the paperwork is the only thing the regulator cares about.
+- **Ceebs** — anything where the *data lineage* is the load-bearing part. Drafting the prose around a regulatory submission, structuring a data quality check, summarising a circular: fine. Generating the numbers that go into the submission, or letting the model "tidy up" a dataset before it goes to the regulator: not fine. If you can't point at the source row for every figure, you can't defend it in an audit. The model can help you build the audit trail. It cannot be in the audit trail.
+- **John** — pricing or reserving conclusions, anything member-identifying, anything where the answer becomes a position the firm stands behind. Stress-testing assumptions, drafting board narrative, sense-checking a memo: fine. The actual pricing decision, the reserving sign-off, the reply to the Central Bank: those are yours. Same logic as Sebastian. The Appointed Actuary role is not delegable, by design.
+
+The shared shape: AI is brilliant at the *preparation* around regulated decisions and useless — actually worse than useless, because it lends false confidence — at the decisions themselves. If the work has your professional designation on the bottom of it, the model is upstream of the work, never the work itself.
 
 ## A short checklist before you trust an answer
 

@@ -27,7 +27,7 @@ The first gets you a textbook paragraph. The second gets you something usable in
 
 I used to think this was overkill. It's not. The hour you spend learning to write good context-loaded prompts is the highest-leverage hour you'll spend on AI all year.
 
-A rule of thumb I picked up watching colleagues at work go from frustrated to productive: **if your prompt is shorter than the answer you want, you haven't given it enough.**
+A rule of thumb I picked up watching colleagues at work go from frustrated to productive: **the model can only ever be as specific as you were.** If the answer comes back generic, the prompt was generic. Look at the input, not the output.
 
 ## 2. Use it for first drafts, never finished work
 

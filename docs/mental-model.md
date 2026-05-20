@@ -30,7 +30,7 @@ People treat it like a search engine.
 
 You type a question, you expect an answer. The model talks like it knows things, so it feels like Google with prose. That mental model leads you to ask short, decontextualised questions, and get short, decontextualised answers back, and then to either trust them too much or dismiss the whole tool as useless.
 
-It is not a search engine. It is not a database. It is not even a *knower*. It is a thing that produces plausible next words based on what came before.
+It is not a search engine. It is not a database. It is not even a *knower*. At its core it is a thing that produces plausible next words based on what came before. In 2026, the better tools can dress that core up with a calculator, a web browser, the ability to read files and run small programs — and that genuinely changes what tasks they can finish — but the engine underneath is still next-word prediction, and the failure modes still come from there.
 
 That sounds dismissive. It isn't meant to be — that mechanism is genuinely useful. But internalising it changes everything about how you talk to it.
 
