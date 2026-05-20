@@ -1,0 +1,12 @@
+site/
+.venv/
+__pycache__/
+*.pyc
+
+# macOS
+.DS_Store
+
+# OMC ephemeral state (session-scoped; don't track)
+.omc/state/
+.omc/sessions/
+.omc/project-memory.json

@@ -1,0 +1,48 @@
+site_name: AI Notes for Mark, Claire, and Marc
+site_url: https://example.github.io/ai/
+site_description: A short, personal tour of practical AI use for three friends.
+
+theme:
+  name: material
+  custom_dir: overrides
+  palette:
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: indigo
+      accent: indigo
+      toggle:
+        icon: material/weather-night
+        name: Switch to dark mode
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: indigo
+      accent: indigo
+      toggle:
+        icon: material/weather-sunny
+        name: Switch to light mode
+  features:
+    - navigation.instant
+    - navigation.tracking
+    - content.code.copy
+    - toc.follow
+
+nav:
+  - Start here: index.md
+  - A mental model: mental-model.md
+  - Practical patterns: practical-patterns.md
+  - Limits: limits.md
+  - Examples: examples.md
+  - Tools I use: tools.md
+
+plugins:
+  - search
+
+markdown_extensions:
+  - toc:
+      permalink: true
+
+exclude_docs: |
+  _*.md
+
+extra:
+  generator: false

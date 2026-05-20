@@ -1,0 +1,106 @@
+{
+  "version": "1.0",
+  "task": "Scaffold mkdocs-material site + GitHub Pages CI for the AI Onboarding Site (Phases 2 & 3 of ralplan-friends-onboarding-artifact.md). Content authoring deferred to user.",
+  "plan_path": ".omc/plans/ralplan-friends-onboarding-artifact.md",
+  "scope_notes": "Phases 2 and 3 ONLY. Note files get H1 + one-line placeholder + <!-- TODO: author --> comment. No body content.",
+  "stories": [
+    {
+      "id": "US-001",
+      "title": "Repository foundation (requirements.txt + .gitignore)",
+      "priority": 1,
+      "passes": true,
+      "acceptanceCriteria": [
+        "File requirements.txt exists at repo root containing exactly two pinned deps: mkdocs==1.6.* and mkdocs-material==9.5.*",
+        "File .gitignore exists at repo root and lists: site/, .venv/, __pycache__/, *.pyc"
+      ]
+    },
+    {
+      "id": "US-002",
+      "title": "Placeholder content files in docs/",
+      "priority": 2,
+      "passes": true,
+      "acceptanceCriteria": [
+        "Files exist: docs/index.md, docs/mental-model.md, docs/practical-patterns.md, docs/limits.md, docs/examples.md, docs/tools.md, docs/404.md",
+        "Each file starts with a single H1 heading appropriate to the file purpose",
+        "Each file contains the literal HTML comment <!-- TODO: author --> on its own line",
+        "No file contains body content beyond H1 + one short placeholder line + the TODO comment",
+        "ls docs/*.md | wc -l equals 8 (7 published + 1 _jargon-allowlist.md which is excluded from the build via exclude_docs)"
+      ]
+    },
+    {
+      "id": "US-003",
+      "title": "Jargon allowlist seed",
+      "priority": 3,
+      "passes": true,
+      "acceptanceCriteria": [
+        "File docs/_jargon-allowlist.md exists",
+        "File contains a clearly labeled list of seed approved terms drawn from the plan: LLM, prompt, context window, hallucination, chat model, agent, RAG, embedding, fine-tune, token",
+        "File explains the gloss-on-first-use rule for any term not on the allowlist"
+      ]
+    },
+    {
+      "id": "US-004",
+      "title": "mkdocs.yml + theme overrides (noindex + footer)",
+      "priority": 4,
+      "passes": true,
+      "acceptanceCriteria": [
+        "File mkdocs.yml exists at repo root",
+        "mkdocs.yml sets site_name, site_url (placeholder OK), theme.name=material, theme.custom_dir=overrides, nav listing the 6 content pages in reading order (index, mental-model, practical-patterns, limits, examples, tools), plugins includes search (404.md in docs/ is auto-served by mkdocs-material as 404.html — no config key needed)",
+        "mkdocs.yml markdown_extensions contains ONLY toc (with permalink:true). NO admonition, NO pymdownx.*",
+        "File overrides/main.html exists, extends base.html, and injects <meta name=\"robots\" content=\"noindex\"> into the head block and a personal-correspondence footer note (e.g. 'Personal correspondence — please don\\'t republish.') into the footer block",
+        "grep -E 'pymdownx|admonition' mkdocs.yml returns empty"
+      ]
+    },
+    {
+      "id": "US-005",
+      "title": "README documenting preview + Pages-enablement",
+      "priority": 5,
+      "passes": true,
+      "acceptanceCriteria": [
+        "README.md exists at repo root",
+        "README explains what the site is in 1-2 sentences",
+        "README documents local preview: pip install -r requirements.txt && mkdocs serve",
+        "README documents the one-time GitHub Pages enablement step explicitly: Settings → Pages → Source = 'GitHub Actions'",
+        "README explains directory layout (docs/ holds content; overrides/ holds theme overrides; .github/workflows/ holds the deploy workflow)"
+      ]
+    },
+    {
+      "id": "US-006",
+      "title": "GitHub Actions deploy workflow",
+      "priority": 6,
+      "passes": true,
+      "acceptanceCriteria": [
+        "File .github/workflows/deploy.yml exists",
+        "Workflow triggers on push to main and on workflow_dispatch",
+        "Workflow uses actions/checkout, actions/setup-python, actions/configure-pages, actions/upload-pages-artifact, and actions/deploy-pages",
+        "Workflow does NOT use 'mkdocs gh-deploy' anywhere",
+        "Workflow has permissions: pages: write, id-token: write, contents: read",
+        "Workflow has a concurrency group named 'pages' with cancel-in-progress: false",
+        "grep -E 'gh-deploy|gh-pages' .github/workflows/deploy.yml returns empty (no legacy branch-based deploy)",
+        "grep -E 'actions/(configure-pages|upload-pages-artifact|deploy-pages)' .github/workflows/deploy.yml returns 3 matches"
+      ]
+    },
+    {
+      "id": "US-007",
+      "title": "Build verification gate",
+      "priority": 7,
+      "passes": true,
+      "acceptanceCriteria": [
+        "mkdocs and mkdocs-material installed (verified via 'mkdocs --version' exit 0)",
+        "'mkdocs build --strict' exits 0 from the repo root with no warnings",
+        "grep -rE '^!!!|^\\?\\?\\?|^===\\s' docs/ returns empty (Principle 1 enforcement)",
+        "grep -rE '\\{%|\\{\\{' docs/ returns empty (no Jinja templating in content)",
+        "The built site/ directory contains index.html, mental-model/index.html, practical-patterns/index.html, limits/index.html, examples/index.html, tools/index.html, 404.html",
+        "site/index.html contains the noindex meta tag",
+        "site/index.html contains the personal-correspondence footer note"
+      ]
+    }
+  ],
+  "metadata": {
+    "createdAt": "2026-05-20",
+    "mode": "ralph",
+    "scope": "phases-2-3-only",
+    "deslop": "enabled",
+    "completedAt": "2026-05-20"
+  }
+}
