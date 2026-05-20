@@ -38,7 +38,7 @@ A search engine rewards short queries. The model rewards context. Long, specific
 
 ## Why this matters for you specifically
 
-**John Cusack**, underwriting and pricing models live and die on the assumptions you bake in. A model with no context will assume the *generic* assumptions — and those won't match Vhi, won't match the Irish market, and won't match what your reinsurer expects. The skill is going to be: *get the assumptions out of your head and into the conversation* before you ask for analysis.
+**John Cusack**, underwriting and pricing models live and die on the assumptions you bake in. A model with no context will assume the *generic* assumptions — and those won't match your firm, won't match the Irish market, and won't match what your reinsurer expects. The skill is going to be: *get the assumptions out of your head and into the conversation* before you ask for analysis.
 
 **Ceebs**, you work in a field where the question "is this number right?" has a real answer. Data validation, lineage, regulatory reporting. The model will happily generate plausible-looking summaries of plausible-looking data. The instinct to ask *"where did this come from and can I verify it?"* — which you already have — is the single most important habit anyone can bring to these tools.
 

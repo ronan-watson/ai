@@ -12,9 +12,9 @@ I've been buried in this stuff since around Christmas — building things, break
 
 Three people, by name:
 
-- **Sebastian Chabal** — mech eng at Schindler. You're solving real-world physical problems with constraints I can't pretend to understand. But the patterns of how to *think* with AI translate.
-- **Ceebs** — data manager at the Pensions Authority, ACA, MSc Data Analytics. You already think in models and evidence. A lot of what works with AI is just disciplined thinking applied to a chatty box.
-- **John Cusack** — Head of Underwriting at Vhi, Fellow Actuary. You know more about quantifying uncertainty than I ever will. That instinct is exactly the right instinct for using these tools well.
+- **Sebastian Chabal** — mech eng working on lifts. You're solving real-world physical problems with constraints I can't pretend to understand. But the patterns of how to *think* with AI translate.
+- **Ceebs** — data manager in pensions regulation, ACA, MSc Data Analytics. You already think in models and evidence. A lot of what works with AI is just disciplined thinking applied to a chatty box.
+- **John Cusack** — Head of Underwriting at a health insurer, Fellow Actuary. You know more about quantifying uncertainty than I ever will. That instinct is exactly the right instinct for using these tools well.
 
 None of you are software engineers. I've tried hard to keep code out of this. Where I couldn't, I explain.
 

@@ -21,7 +21,7 @@ The difference is huge. Compare:
 
 versus
 
-> *"I'm a Fellow Actuary working in health insurance underwriting at Vhi in Ireland. We're reviewing pricing assumptions for 2027 and the board is asking about inflation sensitivity. I already know the general accounting treatment under IFRS 17. What I want is a short list of the second-order effects — things that aren't obvious from the headline reserve calculation but that the board will probably ask about. Three to five points, with a one-line explanation each."*
+> *"I'm a Fellow Actuary working in health insurance underwriting in Ireland. We're reviewing pricing assumptions for 2027 and the board is asking about inflation sensitivity. I already know the general accounting treatment under IFRS 17. What I want is a short list of the second-order effects — things that aren't obvious from the headline reserve calculation but that the board will probably ask about. Three to five points, with a one-line explanation each."*
 
 The first gets you a textbook paragraph. The second gets you something usable in a meeting.
 

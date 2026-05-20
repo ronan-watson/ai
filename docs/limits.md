@@ -42,7 +42,7 @@ Some chat tools now combine the model with web search, which patches this partly
 For your work specifically:
 
 - **John Cusack** — anything from the Central Bank in the last 18 months, the latest IFRS 17 interpretations, any regulator's recent statement: don't trust the model alone.
-- **Ceebs** — Pensions Authority circulars, the most recent IORP II amendments, current data protection guidance: same.
+- **Ceebs** — circulars from the pensions regulator, the most recent IORP II amendments, current data protection guidance: same.
 - **Sebastian Chabal** — the latest harmonised European lift standards, recent safety bulletins: same.
 
 The pattern is: the model is excellent for *concepts that have been stable for years*. It is unreliable for *what changed last quarter*.
@@ -61,7 +61,7 @@ This matters because the people who tend to push back on AI confidently are the 
 
 By default. Some tools — the ones connected to your company's documents, email, Slack, calendar — can read internal context if your employer has set that up. Most general-purpose tools cannot.
 
-This sounds obvious but it bites people. You ask *"who owns the lift-shaft-modelling spreadsheet?"* and it confidently invents a colleague's name. You ask *"what's our underwriting policy on diabetic applicants over 60?"* and it gives you a generic industry answer that has nothing to do with Vhi.
+This sounds obvious but it bites people. You ask *"who owns the lift-shaft-modelling spreadsheet?"* and it confidently invents a colleague's name. You ask *"what's our underwriting policy on diabetic applicants over 60?"* and it gives you a generic industry answer that has nothing to do with your firm.
 
 **How to spot it.** Anytime you mention something specific to your company by name, ask yourself: *would the model actually know this, or is it filling in a plausible blank?* The latter is the default.
 
@@ -73,9 +73,9 @@ Different tools have different policies and different defaults. The free public 
 
 This isn't a paranoid concern. It's a real one for three professions that all handle confidential information.
 
-- **John Cusack** — anything member-identifying, medical, or commercially sensitive about Vhi pricing should not go into a public chat.
+- **John Cusack** — anything member-identifying, medical, or commercially sensitive about your firm's pricing should not go into a public chat.
 - **Ceebs** — pensions data subject to data protection rules cannot legally go into a tool that processes it offshore without the right contract in place.
-- **Sebastian Chabal** — Schindler IP, customer-site information, anything covered by your employment contract.
+- **Sebastian Chabal** — your employer's IP, customer-site information, anything covered by your employment contract.
 
 **The rule.** If you'd be uncomfortable seeing it appear in a future model's output, don't paste it in. Use the version your employer has approved. If they haven't approved one, use synthetic or anonymised examples. The patterns still work — just swap *"this client"* for *"a 55-year-old policyholder with the following profile"*.
 
