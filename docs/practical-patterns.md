@@ -55,7 +55,7 @@ What happens is one of two things. Either the questions are obvious — and now 
 
 I do this for any decision-shaped question where I haven't fully thought it through. The model becomes a structured-thinking partner rather than an answer-vending machine.
 
-A Claire-shaped example: *"I need to design a data quality check for a new regulatory return. Before you suggest checks, ask me five questions about the data and the regulation."* You'll probably get questions about update frequency, source-of-truth, materiality thresholds, audit trail requirements. Answering them is half the work. The model has done you a favour by structuring it.
+An Anna-shaped example: *"I need to design a data quality check for a new regulatory return. Before you suggest checks, ask me five questions about the data and the regulation."* You'll probably get questions about update frequency, source-of-truth, materiality thresholds, audit trail requirements. Answering them is half the work. The model has done you a favour by structuring it.
 
 ## 4. Let it do the boring 80%, keep the judgement 20%
 

@@ -20,7 +20,7 @@ A few flavours I see most often:
 
 ## 2. It cannot reliably do maths
 
-This one matters most for Marc and Claire, so I'm being blunt about it: **the model does not do maths the way you think it does.**
+This one matters most for David and Anna, so I'm being blunt about it: **the model does not do maths the way you think it does.**
 
 It is not a calculator. When you ask it to compute, it's predicting what the next number probably looks like based on patterns in its training data. For simple arithmetic on small numbers it usually gets it right because that pattern is overwhelmingly consistent. For anything with multiple steps, large numbers, or numbers that don't pattern-match cleanly — it will produce a confident, well-formatted, *wrong* answer.
 
@@ -41,9 +41,9 @@ Some chat tools now combine the model with web search, which patches this partly
 
 For your work specifically:
 
-- **Marc** — anything from the Central Bank in the last 18 months, the latest IFRS 17 interpretations, any regulator's recent statement: don't trust the model alone.
-- **Claire** — Pensions Authority circulars, the most recent IORP II amendments, current data protection guidance: same.
-- **Mark** — the latest harmonised European lift standards, recent safety bulletins: same.
+- **David** — anything from the Central Bank in the last 18 months, the latest IFRS 17 interpretations, any regulator's recent statement: don't trust the model alone.
+- **Anna** — Pensions Authority circulars, the most recent IORP II amendments, current data protection guidance: same.
+- **Tom** — the latest harmonised European lift standards, recent safety bulletins: same.
 
 The pattern is: the model is excellent for *concepts that have been stable for years*. It is unreliable for *what changed last quarter*.
 
@@ -73,9 +73,9 @@ Different tools have different policies and different defaults. The free public 
 
 This isn't a paranoid concern. It's a real one for three professions that all handle confidential information.
 
-- **Marc** — anything member-identifying, medical, or commercially sensitive about Vhi pricing should not go into a public chat.
-- **Claire** — pensions data subject to data protection rules cannot legally go into a tool that processes it offshore without the right contract in place.
-- **Mark** — Schindler IP, customer-site information, anything covered by your employment contract.
+- **David** — anything member-identifying, medical, or commercially sensitive about Vhi pricing should not go into a public chat.
+- **Anna** — pensions data subject to data protection rules cannot legally go into a tool that processes it offshore without the right contract in place.
+- **Tom** — Schindler IP, customer-site information, anything covered by your employment contract.
 
 **The rule.** If you'd be uncomfortable seeing it appear in a future model's output, don't paste it in. Use the version your employer has approved. If they haven't approved one, use synthetic or anonymised examples. The patterns still work — just swap *"this client"* for *"a 55-year-old policyholder with the following profile"*.
 
