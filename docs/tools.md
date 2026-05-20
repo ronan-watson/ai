@@ -74,6 +74,8 @@ The paid tiers are mostly in the same price band — roughly the cost of one or 
 
 If your company is paying, even better — use the enterprise version, both because it's free to you and because it has the privacy contract that the consumer version doesn't.
 
+One aside worth knowing: when your company eventually announces it has "adopted AI", what they usually mean is they've bought licences. That's not the same thing. Counting gym memberships is not the same as measuring fitness. Whether anyone in the building is actually getting value out of those licences is a separate question — and you'll probably be in a better position to answer it than the people who paid for them.
+
 ## The thing that changes everything
 
 A tool sitting inside the application you actually work in beats a better tool you have to copy-paste into. The friction of switching windows is the killer. *"Open browser, find tab, copy paragraph in, copy answer back"* — versus *"AI is already in my Word document and can see what I'm writing"* — is a much bigger productivity difference than which model is technically smarter.
