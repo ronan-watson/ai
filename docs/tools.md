@@ -27,14 +27,11 @@ This is the realistic situation for most people. Your IT department has signed a
 
 The advice is the same in all four cases: use the tool you have, lean into the integration features (the bit that reads your actual documents and calendar), and worry less about which underlying model is "best".
 
-## Search-flavoured tools
+## Searching the web through AI
 
-These are AI tools that lean more towards *finding current information* than *reasoning from scratch*.
+All four chat tools above now have a web-search mode. Switch into that mode when the answer depends on something recent — regulation, news, market data, a technical standard from this year. Without it, you're asking a model that hasn't seen the world since some date in the past.
 
-- **Perplexity**. Looks like a search engine, behaves more like an AI that searches the web and summarises the answer with links you can verify. I use it for *"what's the current state of X"* questions where I want sources I can click. If you need to chase recent regulation, news, technical standards — this is often faster than a normal chat tool.
-- **ChatGPT search / Claude search / Gemini search**. The major chat tools all now have a mode that searches the web before answering. They're decent, but Perplexity is more deliberate about *showing you* the sources, which I value when I want to verify.
-
-For all of these: **always click through to at least one source.** The summary is a starting point. The source is the truth.
+**Always click through to at least one source.** The summary is a starting point. The source is the truth.
 
 ## Enterprise and in-house tools
 
@@ -50,8 +47,9 @@ The thing that makes these different from the public tools is they *know your co
 For honesty, here's the real breakdown. Yours will look different.
 
 - **Claude** for almost all writing, drafting, thinking-out-loud, and structured reasoning. Most of these notes were drafted with it.
-- **ChatGPT** occasionally, when I want a second opinion or a different style on the same question.
-- **Perplexity** for *"is this current?"* and *"who else has said this?"* questions.
+- **Claude Code** for actual software work — a command-line version of Claude that reads and edits files in a project. Not relevant to any of you.
+- **Cursor** for software work too — a code editor with AI baked into it. Same caveat.
+- **Gemini Code Assist** ditto — Google's coding-flavoured version of the same idea. Same caveat.
 - **Glean** for anything that requires reading my company's internal documents.
 - **Microsoft Copilot** I use the least — but only because my company's documents live in Google, not Microsoft. If they lived in Outlook and SharePoint, I'd live in Copilot.
 
@@ -63,10 +61,10 @@ A simple decision tree.
 
 1. **Does your work mostly happen in Microsoft Office, Google Workspace, or somewhere else?** Use the one that sits inside the apps you actually use. The integration matters more than the model.
 2. **Do you do a lot of long-form writing or careful reasoning?** Claude is, in my opinion, the best at this. Try it on the same task you'd try ChatGPT on and see if the output reads more like you.
-3. **Do you need a lot of *current* information?** Add Perplexity to whatever else you use. Don't try to make one tool do both jobs.
+3. **Do you need a lot of *current* information?** Use whichever chat tool you have in its search mode. Don't trust training-data answers for anything time-sensitive.
 4. **Is image generation a thing you care about?** ChatGPT and Gemini both have it built in. Skip if not.
 
-The right answer for most non-coders is *one* general-purpose chat tool (whichever your company gave you, or whichever you like the voice of) plus *Perplexity for current-information questions*. That covers 95% of what's useful.
+The right answer for most non-coders is *one* general-purpose chat tool — whichever your company gave you, or whichever you like the voice of — used regularly inside your real workflow. That covers 95% of what's useful.
 
 ## A note on cost
 
