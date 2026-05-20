@@ -93,4 +93,4 @@ That's it. None of this should put you off using these tools. It's just the cost
 
 A tool isn't good just because it's powerful. A chainsaw is powerful too. The respect you give it is what makes it useful.
 
-The next page is examples — what this looks like end-to-end for the kind of work each of you actually does.
+The next page is examples — four real things I did with AI this year, and how to map them across to your own work.
