@@ -4,6 +4,8 @@ _A short, opinionated list — what each is good and bad at, and how to start._
 
 Before we get into names: the most important thing on this page is the same as the first practical pattern. **What you use matters less than how you use it.** A friend with Microsoft Copilot who has internalised the patterns from earlier will get more out of it than a friend with the latest bleeding-edge model who treats it like Google.
 
+One honest caveat to that, since you'll notice it below: I have a preferred tool. I use Claude for most of my writing, and I think it's meaningfully better than the others at long-form drafting and at admitting uncertainty. So "the brand matters less than you think" is doing 90% of the work; "but for one specific kind of task there's a real difference" is doing the other 10%. For almost all of *your* day jobs — summarising, drafting, structuring, sense-checking — the 90% is the relevant bit. Use what you have. If you ever find yourself doing a lot of long, careful, multi-step reasoning in a chat tool, then go look at the alternatives.
+
 That said. Here's the lay of the land.
 
 ## The four general-purpose chat tools
@@ -32,6 +34,16 @@ The advice is the same in all four cases: use the tool you have, lean into the i
 All four chat tools above now have a web-search mode. Switch into that mode when the answer depends on something recent — regulation, news, market data, a technical standard from this year. Without it, you're asking a model that hasn't seen the world since some date in the past.
 
 **Always click through to at least one source.** The summary is a starting point. The source is the truth.
+
+## The modes most people don't use
+
+All four chat tools above have three input modes that, for non-engineers, are arguably more useful than typing questions and most people never touch them.
+
+- **File upload.** Drop a PDF, a spreadsheet, an image, a slide deck into the chat. Ask questions about it. This is the single feature that does most of the work in the examples on the previous page — Sebastian's lift standard, Ceebs' regulator circular, John's pricing memo. If your job involves reading long documents, this is the thing to learn first. Every paid tier supports it; most free tiers do too with limits.
+- **Voice mode.** Press a button, talk to it, hear it back. Good for the commute, the school run, the walk to the office. Better for thinking-out-loud than for precise output — you'll come back to a desk and refine in text — but the thinking pass itself happens in a time you'd otherwise lose. ChatGPT, Gemini and Claude all have versions; Copilot is catching up.
+- **Camera or screenshot.** Point your phone at a piece of paper, a panel, a label, a screen. "What does this regulation reference mean?" — for a paper standard. "What's wrong with this error screen?" — for IT. "Translate this sign." The accuracy on text from images is now very high. The accuracy on judging physical things (Sebastian, this is for you) is more variable — useful for triage, not for sign-off.
+
+The pattern: most non-engineers reach for the typing box because that's what they saw on a launch demo. The other three modes are where the next jump in usefulness is, especially when you're not sitting at a desk.
 
 ## Enterprise and in-house tools
 

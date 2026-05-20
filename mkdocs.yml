@@ -32,6 +32,7 @@ nav:
   - Practical patterns: practical-patterns.md
   - Limits: limits.md
   - Examples: examples.md
+  - Is it working?: measuring.md
   - Tools I use: tools.md
 
 plugins:

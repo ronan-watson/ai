@@ -1,8 +1,8 @@
-# Examples from my own work
+# Examples
 
-_Four real things I did with AI this year. Map them across to your own._
+_Four real things from my own work, plus one short example for each of you._
 
-The earlier pages are the theory. This one is the receipts. Each example below is something I actually built, used, or learned from in my own job over the last six months — not a hypothetical. The shapes will look different in your work, but the patterns underneath should be familiar by now.
+The earlier pages are the theory. This one is the receipts. The first four are things I actually built, used, or learned from in my own job over the last six months — not hypotheticals. The fifth section is shorter and aimed directly at the three of you: one concrete task each, in something close to your domain, that you could try this week.
 
 ## 1. A bot that answers the boring questions
 
@@ -67,10 +67,22 @@ There's a wider pattern here, and it's worth saying out loud. AI lowers the marg
 
 You don't need an AI assistant to put pressure on your week. You already have plenty of pressure. Don't let the *"this is so cheap I might as well"* feeling become the way pressure escalates.
 
-## What these four have in common
+## 5. One small example for each of you
 
-Each of them started from a real frustration — repeat questions, leave coverage, meeting-note overhead, iteration creep. Each kept a human in the loop at the point where judgement matters. Each turned out to be more about the *system around* the AI — the curated knowledge collection, the disclaimer, the join-from-laptop habit, the explicit stopping rule — than about the model itself.
+The four above are from my work. Here is one task each, in something close to yours, that you could try this week. I'm not pretending to know your jobs as well as you do — the shape is the contribution, not the content. Edit accordingly.
 
-If you take one of these and try the equivalent in your own work this month, I'd recommend the meeting-notes one. Lowest setup cost. Highest hit-rate. Most repeatable. You'll know within a week whether it's saving you time.
+**Sebastian — extracting a clause from a long standard.** Pick a harmonised standard you keep meaning to read properly. Drop the PDF into a chat tool that accepts file uploads (any of the four does). Prompt: *"I'm a mechanical engineer working on lift installation. I need the specific clauses that govern minimum overhead clearance for a goods-and-passenger lift. Quote each clause verbatim, give me the section number, and list anything in the standard that contradicts or qualifies them. If you can't find a clause, say so — don't paraphrase."* Verify each clause number by opening the PDF at that page. The model will sometimes invent a section number that doesn't exist — that's the bit you check. Once you trust the output for that one standard, you've found a use case that scales to every other standard on your shelf.
 
-The last page is a short, opinionated guide to which AI tools actually exist and how to pick one. It's the most boring page on the site, which is appropriate, because the choice of tool genuinely matters less than what you do with it.
+**Ceebs — diffing a new regulator circular against the old one.** When the pensions regulator publishes an updated circular, upload both versions to a chat tool. Prompt: *"I'm a data manager in pensions regulation. Compare these two versions of the same circular. Give me a table with three columns: section, what changed, and whether the change is procedural or substantive. Quote the exact new wording for substantive changes. Mark anything ambiguous as 'flag for legal review' — don't try to interpret it yourself."* The structured output saves you an hour of side-by-side reading. Verify the substantive rows against the actual document. This is the data-validation instinct you already have, applied to text instead of numbers.
+
+**John — stress-testing the assumptions in a pricing memo.** Take a recent pricing or reserving memo you wrote. Paste it into a chat tool (use the enterprise version — this is member-adjacent). Prompt: *"I'm a Fellow Actuary in Irish health insurance. List every assumption baked into this memo, including the ones I didn't state explicitly. For each, rank it: (a) how sensitive is the result to it being wrong by 10%, and (b) how confident am I likely to be in it. Then tell me the three I should pressure-test before the next board meeting."* You will likely disagree with at least one of the rankings — that's the point. The disagreement is the value. The output is a starting list, not a conclusion. Do not put member data into the prompt. The memo's narrative and assumptions are enough.
+
+The pattern under all three: file or document goes in, structured output comes back, you verify the load-bearing pieces, you decide. Same shape as my four. Different surface.
+
+## What these have in common
+
+Each of the first four started from a real frustration — repeat questions, leave coverage, meeting-note overhead, iteration creep. Each kept a human in the loop at the point where judgement matters. Each turned out to be more about the *system around* the AI — the curated knowledge collection, the disclaimer, the join-from-laptop habit, the explicit stopping rule — than about the model itself. The three in section 5 are smaller in scope but identical in shape: a focused input, a structured output, a verification step, a decision that stays with you.
+
+If you take one of these and try the equivalent in your own work this month, I'd recommend the meeting-notes one. Lowest setup cost. Highest hit-rate. Most repeatable. You'll know within a week whether it's saving you time. Closely followed by the one I wrote for your own domain in section 5.
+
+The next page is the question every senior person eventually has to answer: *is this AI thing actually paying off?* Five metrics I look at, then the same five translated for each of you. After that, a short opinionated tour of which tools actually exist.

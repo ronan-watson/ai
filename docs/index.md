@@ -1,6 +1,6 @@
 # AI Notes for Sebastian Chabal, Ceebs, and John Cusack
 
-_A short, personal tour. Read in order or skip around — about 30 minutes end to end._
+_A short, personal tour. Read in order or skip around — about half an hour end to end, a bit more if you read every example._
 
 When one of you asked *"how can I apply it to my job? Does it depend on my company's access to AI tech?"* — that's the question I've been chewing on for six months. So I wrote these notes.
 
@@ -23,8 +23,9 @@ None of you are software engineers. I've tried hard to keep code out of this. Wh
 1. **A mental model** — what these tools actually are, and the one wrong assumption that wastes the most time.
 2. **Practical patterns** — six things I do every day that turn out to matter more than which tool you have.
 3. **Limits** — where it breaks, and how to spot it before it costs you.
-4. **Examples** — one worked example each, in something close to your domain.
-5. **Tools I use** — a quick map of the landscape so you know what's out there, even if your company only lets you use one.
+4. **Examples** — four real things I did, plus one short task each in something close to your domain.
+5. **Is it working?** — five metrics I use to tell if AI is actually paying off, and the same five translated for each of your worlds.
+6. **Tools I use** — a quick map of the landscape so you know what's out there, even if your company only lets you use one.
 
 If you're tight on time, read **A mental model** and **Practical patterns**. That's the 80%.
 
